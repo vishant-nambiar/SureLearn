@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/quiz.css">
+</head>
+<body class="">
+    <form class="container" action="/quiz" method="POST">
+        <div>
+            <%= question.number %>. <%= question.question  %>
+        </div>
+        <div class="options">
+            <div class="option">option 1</div>
+            <div class="option">option 2</div>
+            <div class="option">option 3</div>
+            <div class="option">option 4</div>
+        </div>
+        <input type="hidden" name='userCorrect' value=0>
+        <div class="next-container">
+            <button class="next" type="submit">NEXT</button>
+        </div>
+     </form>
+    
+
+    <script>
+        
+    </script>
+</body>
+
+</html>

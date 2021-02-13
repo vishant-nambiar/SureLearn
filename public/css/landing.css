@@ -1,0 +1,313 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.sec-1 {
+    background-image: url('https://i.pinimg.com/originals/79/c0/c6/79c0c691e7ddea72c7632019b75ff890.jpg');
+    background-repeat: no-repeat;
+    height: 780px;
+    background-size: 100% 100%;
+}
+
+
+
+.sec-1-bg {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(5, 232, 186, 0.4);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sec-1-bg h1 {
+    font-size: 7rem;
+}
+
+
+.sec-1-bg p {
+    font-size: 3rem;
+}
+
+
+
+
+/***********************************************************/
+
+
+
+
+.sec-2 {
+    height: 400px;
+}
+
+
+
+
+
+.sec-2-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #050546;
+    background-image: linear-gradient(315deg, #009ffd 74%, #2a2a72 0%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sec-2-bg p {
+    font-size: large;
+}
+
+
+.sec-2-bg h2 {
+    font-size: 5rem;
+}
+
+
+
+
+/**************************************************************/
+
+
+
+
+
+.sec-3 {
+    height: 400px;
+}
+
+
+
+.sec-3-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #050546;
+    background-image: linear-gradient(315deg, #009ffd 74%, #2a2a72 0%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-3-bg h3 {
+    font-size: 5rem;
+}
+
+
+.sec-3-bg p {
+    font-size: large;
+}
+
+
+
+
+
+
+/*******************************************************************************/
+
+
+
+
+
+.sec-4 {
+    height: 400px;
+}
+
+
+
+.sec-4-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #050546;
+    background-image: linear-gradient(315deg, #009ffd 74%, #2a2a72 0%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-4-bg h3 {
+    font-size: 5rem;
+}
+
+
+.sec-4-bg p {
+    font-size: large;
+}
+
+
+
+
+
+
+/*************************************************************************/
+
+
+
+
+
+.sec-5 {
+    height: 400px;
+}
+
+
+
+.sec-5-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #050546;
+    background-image: linear-gradient(315deg, #009ffd 74%, #2a2a72 0%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-5-bg h3 {
+    font-size: 5rem;
+}
+
+
+.sec-5-bg p {
+    font-size: large;
+}
+
+
+
+
+/***********************************************************************/
+
+
+
+
+
+.sec-6 {
+    height: 600px;
+}
+
+
+
+
+.sec-6-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #050546;
+    background-image: linear-gradient(315deg, #009ffd 74%, #2a2a72 0%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-second-third-grid {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 25px;
+    margin: 20px 0;
+}
+
+
+
+
+/***********************************************************************/
+
+
+
+
+
+.sec-7 {
+    height: 400px;
+}
+
+
+
+.sec-7-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #050546;
+    background-image: linear-gradient(315deg, #009ffd 74%, #2a2a72 0%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-7-bg h3 {
+    font-size: 5rem;
+}
+
+
+.sec-7-bg p {
+    font-size: large;
+}
+
+
+
+
+
+/******************************************************************************************/
+
+
+
+
+
+.sec-8 {
+    height: 400px;
+}
+
+
+
+.sec-8-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #050546;
+    background-image: linear-gradient(315deg, #009ffd 74%, #2a2a72 0%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-8-bg h3 {
+    font-size: 5rem;
+}
+
+
+.sec-8-bg p {
+    font-size: large;
+}

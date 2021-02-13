@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/landing.css">
+</head>
+<body>
+    <section class="sec-1">
+        <div class="sec-1-bg">
+            <h1>SureLearn</h1>
+            <p>Learn Anything</p>
+        </div>
+    </section>
+    <section class="sec-2">
+        <div class="sec-2-bg">
+            <p>You only have to learn one thing:</p>
+            <h2>You Can Learn Anything</h2>
+        </div>
+    </section>
+    <section class="sec-3">
+        <div class="sec-3-bg">
+            <h3>The power of Learning</h3>
+            <p>Learning is the lifelong inherent human activity that has brought us to the forefront as a species.</p>
+            <p>Our mission is to use the insane power of Active Learning and advanced Artificial Intelligence make you a fast, durable, but most importantly, independent learner. </p>
+        </div>
+    </section>
+    <section class="sec-4">
+        <div class="sec-4-bg">
+            <h3>Active Learning</h3>
+            <p>This is the incredibly powerful scientifically proven way to learn anything.</p>
+            <p>It emphasizes doing, and not just seeing or reading.</p>
+        </div>
+    </section>
+    <section class="sec-5">
+        <div class="sec-5-bg">
+            <h3>AI Charged Learning</h3>
+            <p>Our unique machine learning system ensures that you learn the most important concepts of whatever you wish to learn,that you test yourself in the most efficient manner and most importantly, you do it without requiring any help.</p>
+        </div>
+    </section>
+    <section class="sec-6">
+        <div class="sec-6-bg">
+            <h3>So how does it work?</h3>
+            <div class='first-second-third-grid'>
+                <div>
+                    <p>FIRST</p>
+                    <p>You choose what you would like to study and the material that you're gonna study from, be it video, audio or text.</p>
+                </div>
+                <div>
+                    <p>SECOND</p>
+                    <p>You study the material and give it a proper go-through atleast once.</p>
+                </div>
+                <div>
+                    <p>THIRD</p>
+                    <p>You upload the material onto SureLearn, then we process it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-7">
+        <div class="sec-7-bg">
+            <h3>Then, the magic happens</h3>
+            <p>Lorem Ipsum</p>
+        </div>
+    </section>
+    <section class="sec-8">
+        <div class="sec-8-bg">
+            <h3>So what are you waiting for?</h3>
+            <p>Head below to get started with SureLearn!</p>
+        </div>
+    </section>
+    <section class="sec-9">
+        <div class="sec-9-bg">
+            <h3>Get started learning!</h3>
+            <h4>Upload your material in the format you wish.</h4>
+            <form action="/text" method='POST'>
+                <p>Upload text material:</p>
+                <textarea name="passage"  cols="30" rows="10" placeholder="Type or paste your text material here..." required></textarea>
+                <button type="submit">Submit text for analysis</button>
+            </form>
+            <form action="/audio" method='POST' enctype="multipart/form-data">
+                <p>Upload the audio you would like to learn from:</p>
+                <input type="file" name="audio" accept="audio/*" required>
+                <button type="submit">Submit audio for analysis</button>
+            </form>
+            <form action="/video" method='POST' enctype="multipart/form-data">
+                <p>Upload the video that you would like to learn from:</p>
+                <input type="file" name="video" accept="video/*" required>
+                <button type="submit">Submit video for analysis</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

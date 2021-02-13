@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Here is a short summary of the passage:</h2>
+    <h3> <%= passage.title %> </h3>
+    <p> <%= passage.passage %> </p>
+
+    <h3>Here are some quick important points from the passage:</h3>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <p>its important to test yourself. take a quiz!</p>
+    <form action="/quiz" method="POST">
+        <button type="submit"> Start the Quiz!</button>
+    </form>
+</body>
+</html>
