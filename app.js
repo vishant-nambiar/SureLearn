@@ -148,7 +148,7 @@ app.post('/checkYK', (req, res, next) =>{
 //object2 is mcq questions
 let rawdata = readFileSync('questions.json');
 let object2 = JSON.parse(rawdata);
-let questions = object2.questions.slice(0,3);
+let questions = object2.questions.slice(0,6);
 let questionIndex = -1;
 let tempArray;
 //start the quiz
