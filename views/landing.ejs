@@ -77,20 +77,28 @@
             <h4>Upload your material in the format you wish.</h4>
             <form action="/text" method='POST'>
                 <p>Upload text material:</p>
+                Enter a title for the passage
+                <input type="text" name="title">
                 <textarea name="passage"  cols="30" rows="10" placeholder="Type or paste your text material here..." required></textarea>
                 <button type="submit">Submit text for analysis</button>
             </form>
             <form action="/audio" method='POST' enctype="multipart/form-data">
+                Enter a title for the passage
+                <input type="text" name="title">
                 <p>Upload the audio you would like to learn from:</p>
                 <input type="file" name="audio" accept="audio/*" required>
                 <button type="submit">Submit audio for analysis</button>
             </form>
             <form action="/video" method='POST' enctype="multipart/form-data">
+                Enter a title for the passage
+                <input type="text" name="title">
                 <p>Upload the video that you would like to learn from:</p>
                 <input type="file" name="video" accept="video/*" required>
                 <button type="submit">Submit video for analysis</button>
             </form>
         </div>
     </section>
+    <form action="/checkYK" method="POST"><button type="submit">Test checkYK</button></form>
+
 </body>
 </html>

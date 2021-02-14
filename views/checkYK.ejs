@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/checkYK.css">
+</head>
+<body class="">
+    <form class="container" action="/checkYK" method="POST">
+        <div class="check-question">
+            <%= question %>
+        </div>
+        <div class="check-text">
+            <textarea name="" cols="60" rows="10" placeholder="Type your answer here..." style="max-width: 90%;"></textarea>
+        </div>
+        <input type="hidden" name='userCorrect' value=0>
+        <div class="next-container">
+            <button class="next" type="button">I'm Done!</button>
+            <button class="next" type="submit">NEXT</button>
+        </div>
+     </form>
+    
+
+    <script>
+        document.querySelector('.next[type="button"]').addEventListener('click', () => {
+            document.querySelector('.next[type="button"]').style.display='none';
+            document.querySelector('.next[type="submit"]').style.display='block';
+            document.querySelector('textarea').classList.toggle('container-correct');
+            document.querySelector('.check-question').style.color = 'rgb(24, 100, 24)';
+        });
+    </script>
+</body>
+
+</html>

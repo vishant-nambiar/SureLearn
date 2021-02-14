@@ -9,14 +9,14 @@
 </head>
 <body class="">
     <form class="container" action="/quiz" method="POST">
-        <div>
-            <%= question.number %>. <%= question.question  %>
+        <div class='question-container'>
+            <%= question.question  %>
         </div>
         <div class="options">
-            <div class="option">option 1</div>
-            <div class="option">option 2</div>
-            <div class="option">option 3</div>
-            <div class="option">option 4</div>
+            <div class="option o1"> <%= question.op1 %></div>
+            <div class="option o2"> <%= question.op2 %> </div>
+            <div class="option o3"> <%= question.op3 %> </div>
+            <div class="option o4"> <%= question.op4 %></div>
         </div>
         <input type="hidden" name='userCorrect' value=0>
         <div class="next-container">
@@ -26,7 +26,28 @@
     
 
     <script>
-        
+        let answer = 'o' + '<%= question.answer %>';
+        document.querySelectorAll('.option').forEach((x) =>{
+            x.addEventListener('click', (e) => {
+                let selected = e.target;
+                if( selected.classList.contains(answer)){
+                    selected.classList.toggle('btn-right');
+                    document.querySelector('body').classList.add('body-right');
+                    document.querySelector('.question-container').style.color = 'green';
+                    document.querySelector('input[type="hidden"]').setAttribute('value', '1');
+                } else {
+                    selected.classList.toggle('btn-wrong');
+                    document.querySelector('.'+answer).classList.add('btn-right');
+                    document.querySelector('body').classList.add('body-wrong');
+                    document.querySelector('.question-container').style.color = 'red';
+                    document.querySelector('input[type="hidden"]').setAttribute('value', '0');
+                }
+                document.querySelectorAll('.option').forEach((y) =>{
+                        y.removeEventListener('click', removeEvent);
+                    });
+                    function removeEvent() {let number = 10; console.log(10);}
+            });
+        });
     </script>
 </body>
 
