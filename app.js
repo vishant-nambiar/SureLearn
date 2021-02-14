@@ -83,6 +83,7 @@ app.post('/video', (req,res,next) => {
             object = JSON.parse(data);
             object.title = req.body.title;
             console.log(object);
+        
         });
         function wait(){
             if(object == 0){
@@ -115,18 +116,30 @@ app.get('/summary', (req, res, next)=>{
 
 
 
+
+
+app.post('/checkYK-start', (req, res, next) => {
+    res.render('checkYK-start');
+});
+
+
 let checkIndex = -1;
-let checkQuestions = ['firstQ', 'secondQ', 'thirdQ'];
+let checkQuestions = ['1q', '2q'];
 app.post('/checkYK', (req, res, next) =>{
+    checkQuestions = object.checkYK;
     checkIndex += 1;
     let length2 = checkQuestions.length;
     if(checkIndex >= length2){
         checkIndex = -1;
-        res.redirect('/checkYK-over');
+        res.render('checkYK-over');
     }
     let question = checkQuestions[ checkIndex ];
     res.render('checkYK', {question: question});
 });
+
+
+
+
 
 
 

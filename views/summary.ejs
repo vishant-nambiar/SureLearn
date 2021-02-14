@@ -31,7 +31,7 @@
     <div class="container d-flex flex-column align-items-center">
 
       <h1>Your material has been proccessed!</h1>
-      <h2 style="text-align: center;"> The '<%= object.title %>' has been proccessed and a short summary, important points, and an AI generated Smart Quiz has been generated!</h2>
+      <h2 style="text-align: center;"> The ' <strong> <%= object.title %> </strong>' has been proccessed and a short summary, important points, and an AI generated Smart Quiz has been generated!</h2>
     
 
       
@@ -40,7 +40,14 @@
 
     </div>
   </header><!-- End #header -->
-
+  <div class="box">
+    <div class="box-sm red"></div>
+    <div class="box-sm orange"></div>
+    <div class="box-sm yellow "></div>
+    <div class="box-sm green "></div>
+    <div class="box-sm blue "></div>
+    <div class="box-sm purple"></div>
+  </div>
   <main id="main">
 
 
@@ -70,7 +77,14 @@
     </section><!-- End Contact Us Section -->
 
 
-
+    <div class="box">
+      <div class="box-sm red"></div>
+      <div class="box-sm orange"></div>
+      <div class="box-sm yellow "></div>
+      <div class="box-sm green "></div>
+      <div class="box-sm blue "></div>
+      <div class="box-sm purple"></div>
+    </div>
 
      <!-- ======= Contact Us Section ======= -->
      <section id="contact" class="contact">
@@ -86,7 +100,7 @@
 
           <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <ul style="">
+              <ul>
                 <% object.points.forEach((x) => { %>
                   <li> <%= x %> </li>
                 <% }); %>
@@ -108,20 +122,30 @@
 
 
 
-
+  <div class="box">
+    <div class="box-sm red"></div>
+    <div class="box-sm orange"></div>
+    <div class="box-sm yellow "></div>
+    <div class="box-sm green "></div>
+    <div class="box-sm blue "></div>
+    <div class="box-sm purple"></div>
+  </div>
 
   
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about quiz-form">
       <div class="container">
 
         <div class="section-title">
           <h2>Test Yourself!</h2>
           <p>Illo velit quae dolorem voluptate pireda notila set. Corrupti voluptatum tempora iste ratione deleniti corrupti nostrum ut</p>
-          <form action="/quiz-start" method="POST">
-            <button>Take the AI Smart Quiz</button>
+          <form id="quiz-form" action="/checkYK-start" method="POST">
+            <div class="next-container">
+              <button class="next" type="submit">Take the AI smart quiz</button>
+          </div>
           </form>
         </div>
+        
 
         
 
@@ -141,7 +165,11 @@
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
-
+  <script>
+    document.querySelector('body').addEventListener('click', () => {
+      console.log('hello');
+    });
+  </script>
 </body>
 
 </html>

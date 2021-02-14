@@ -17,6 +17,7 @@
     <section class="sec-2">
         <div class="sec-2-bg">
             <p>You only have to learn one thing:</p>
+            <img src="\assets\img\graduation-cap.png" alt="">
             <h2>You Can Learn Anything</h2>
         </div>
     </section>
@@ -36,13 +37,14 @@
     </section>
     <section class="sec-5">
         <div class="sec-5-bg">
-            <h3>AI Charged Learning</h3>
+            <h3>AI Charged Learning <img src="\assets\img\ai.png" alt=""></h3>
             <p>Our unique machine learning system ensures that you learn the most important concepts of whatever you wish to learn,that you test yourself in the most efficient manner and most importantly, you do it without requiring any help.</p>
         </div>
     </section>
     <section class="sec-6">
         <div class="sec-6-bg">
             <h3>So how does it work?</h3>
+            <img style="margin-top: 20px;" src="\assets\img\settings.png" alt="">
             <div class='first-second-third-grid'>
                 <div>
                     <p>FIRST</p>
@@ -61,7 +63,7 @@
     </section>
     <section class="sec-7">
         <div class="sec-7-bg">
-            <h3>Then, the magic happens</h3>
+            <h3>Then, the magic happens <img src="\assets\img\hat.png" alt=""></h3>
             <p>Lorem Ipsum</p>
         </div>
     </section>
@@ -75,30 +77,41 @@
         <div class="sec-9-bg">
             <h3>Get started learning!</h3>
             <h4>Upload your material in the format you wish.</h4>
-            <form action="/text" method='POST'>
-                <p>Upload text material:</p>
-                Enter a title for the passage
-                <input type="text" name="title">
-                <textarea name="passage"  cols="30" rows="10" placeholder="Type or paste your text material here..." required></textarea>
-                <button type="submit">Submit text for analysis</button>
-            </form>
-            <form action="/audio" method='POST' enctype="multipart/form-data">
-                Enter a title for the passage
-                <input type="text" name="title">
-                <p>Upload the audio you would like to learn from:</p>
-                <input type="file" name="audio" accept="audio/*" required>
-                <button type="submit">Submit audio for analysis</button>
-            </form>
-            <form action="/video" method='POST' enctype="multipart/form-data">
-                Enter a title for the passage
-                <input type="text" name="title">
-                <p>Upload the video that you would like to learn from:</p>
-                <input type="file" name="video" accept="video/*" required>
-                <button type="submit">Submit video for analysis</button>
-            </form>
+            <input type="text" name="title" class="form-title" placeholder="Enter a title for your material">
+
+            <div class="form-grid">
+                <form action="/text" method='POST'>
+                    <p>Upload text material:</p>
+                    <textarea name="passage"  cols="50" rows="12" placeholder="Type or paste your text material here..." required></textarea>
+                    <button class="upload-btn" type="submit">Submit text for analysis</button>
+                    <input type="hidden" name="title" class="hidden-title" value="">
+                </form>
+                <form action="/audio" method='POST' enctype="multipart/form-data">
+                    <p>Upload the audio you would like to learn from:</p>
+                    <input type="file" name="audio" accept="audio/*" required>
+                    <button class="upload-btn" type="submit">Submit audio for analysis</button>
+                    <input type="hidden" name="title" class="hidden-title" value="">
+                </form>
+                <form action="/video" method='POST' enctype="multipart/form-data">
+                    <p>Upload the video that you would like to learn from:</p>
+                    <input type="file" name="video" accept="video/*" required>
+                    <button class="upload-btn" type="submit">Submit video for analysis</button>
+                    <input type="hidden" name="title" class="hidden-title" value="">
+                </form>
+            </div>
+
         </div>
     </section>
-    <form action="/checkYK" method="POST"><button type="submit">Test checkYK</button></form>
+    <form action="/checkYK-start" method="POST"><button type="submit">Test checkYK</button></form>
 
+
+    <script>
+        document.querySelectorAll('.upload-btn').forEach((x) => {
+            x.addEventListener('click', (e) => {
+                document.querySelector('input[type="hidden"]').setAttribute('value', document.querySelector('.form-title').value );
+
+            });
+        });
+    </script>
 </body>
 </html>

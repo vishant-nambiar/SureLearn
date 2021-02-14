@@ -58,7 +58,7 @@ body {
     padding: 5px 10px;
     text-align: center;
 }
-
+ 
 
 
 .next {
@@ -96,4 +96,28 @@ body {
 .container-correct {
     color: rgb(2, 58, 2) !important;
     background-color: rgb(158, 250, 158) !important;
+}
+
+
+
+
+.check-question {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+textarea {
+    border:rgb(6, 6, 218) 2px solid;
+    margin-top: 10px;
+}
+
+textarea::placeholder {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+textarea:focus {
+    outline: rgb(6, 6, 218) 2px solid;
 }

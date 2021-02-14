@@ -17,11 +17,11 @@ body {
 }
 
 .body-wrong {
-    background-color: rgba(199, 0, 57, 0.3);
+    background-color: rgba(199, 0, 57, 1);
 }
 
 .body-right {
-    background-color: rgba(22, 199, 154, 0.2) ;
+    background-color: rgba(22, 199, 154, 1) ;
 }
 
 
@@ -68,7 +68,7 @@ body {
     padding: 10px 20px;
 }
 
-
+ 
 
 .next-container {
     display: flex;
