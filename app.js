@@ -32,7 +32,6 @@ app.post('/text', (req,res,next) => {
         process.stdout.on('data', function(data) {
             object = JSON.parse(data);
             object.title = req.body.title;
-            console.log(object);
         });
     function wait(){
         if(object == 0){
@@ -57,7 +56,6 @@ app.post('/audio', (req,res,next) => {
         process.stdout.on('data', function(data) {
             object = JSON.parse(data);
             object.title = req.body.title;
-            console.log(object);
         });  
         function wait(){
             if(object == 0){
@@ -82,8 +80,6 @@ app.post('/video', (req,res,next) => {
         process.stdout.on('data', function(data) {
             object = JSON.parse(data);
             object.title = req.body.title;
-            console.log(object);
-        
         });
         function wait(){
             if(object == 0){
@@ -145,13 +141,13 @@ app.post('/checkYK', (req, res, next) =>{
 
 
 
-//object2 is mcq questions
+
 let rawdata = readFileSync('questions.json');
 let object2 = JSON.parse(rawdata);
 let questions = object2.questions.slice(0,6);
 let questionIndex = -1;
 let tempArray;
-//start the quiz
+
 
 app.post('/quiz-start', (req, res, next) => {
     res.render('quiz-start');

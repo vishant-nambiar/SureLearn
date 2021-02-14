@@ -4,7 +4,9 @@
     padding: 0;
 }
 
-
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 .sec-1 {
@@ -32,12 +34,14 @@
 
 
 .sec-1-bg h1 {
-    font-size: 7rem;
+    font-size: 8rem;
+    font-family: 'Great Vibes', cursive;
 }
 
 
 .sec-1-bg p {
     font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -66,17 +70,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 50px;
 }
 
 
 
 .sec-2-bg p {
-    font-size: large;
+    font-size: 35px;
 }
 
 
 .sec-2-bg h2 {
     font-size: 5rem;
+    font-family: 'Allura', cursive;
 }
 
 
@@ -106,6 +112,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 50px;
 }
 
 
@@ -115,7 +122,7 @@
 
 
 .sec-3-bg p {
-    font-size: large;
+    font-size: 20px;
 }
 
 
@@ -155,7 +162,8 @@
 
 
 .sec-4-bg p {
-    font-size: large;
+    font-size: 25px;
+    outline: black 1px;
 }
 
 
@@ -196,7 +204,8 @@
 
 
 .sec-5-bg p {
-    font-size: large;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 
@@ -234,9 +243,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin: 20px 0;
+    font-size: 20px;
 }
 
 
+
+.grid-title {
+    font-size: 4rem;
+}
 
 
 /***********************************************************************/
@@ -261,6 +275,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 110px;
 }
 
 
@@ -270,7 +285,7 @@
 
 
 .sec-7-bg p {
-    font-size: large;
+    font-size: 18px;
 }
 
 
@@ -303,12 +318,12 @@
 
 
 .sec-8-bg h3 {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 
 .sec-8-bg p {
-    font-size: large;
+    font-size: 4rem;
 }
 
 
@@ -339,6 +354,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 
@@ -371,11 +387,13 @@
     border: none;
     border-bottom: grey 1px solid;
     width: 300px;
-    
+    margin-top: 30px;
+    line-height: 2rem;
 }
 
 .form-title::placeholder {
     color: honeydew;
+    font-size: 20px;
 }
 
 .form-title:focus {
@@ -386,15 +404,43 @@
 
 .upload-btn {
     border: 2px solid gray;
-    color: gray;
-    background-color: rgb(25, 200, 206);
+    color: #12672c;
+    background-color: rgb(25 206 161);
     padding: 8px 20px;
     border-radius: 8px;
     font-size: 20px;
     font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0.5;
 }
 
 
 textarea {
-    background-color: rgb(149, 199, 223);
+    background-color: rgb(94 181 222);
+}
+textarea::placeholder {
+    color: black;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline;
+    border: 3px blue solid;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+.sec-9-bg h3 {
+    font-size: 3rem;
+}
+
+.sec-9-bg h4 {
+    font-size: 2rem;
 }
