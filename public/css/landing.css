@@ -236,6 +236,10 @@ body {
     align-items: center;
 }
 
+.sec-6-bg h3 {
+    font-size: 3rem;
+}
+
 
 .first-second-third-grid {
     padding: 50px;
