@@ -14,10 +14,12 @@ Learning ought to be accessible and freely available for everyone. The best and 
 - Then, their active recall is tested using the two section AI smart quiz. Questions regarding the core points of the material are auto-generated and the user can take them in a fun, game-show like manner. The first section is dedicated to active recall and truly forces the user to remember and comprehend the material, thus making sure the material sticks to memory.
 - The next section generates MCQs to test even harder more remote concepts from the memory. The smart testing system keeps track of which questions the user is having difficulty in, and which questions he or she has a thorough grip on, and balances the questions so as to ensure complete learning.  Some fun design truly makes these quizzes enjoyable.
 
-![image displaying SureLearn features](https://images2.imgbox.com/47/fa/f8ToIEIc_o.png)
-![image displaying material upload](https://images2.imgbox.com/58/87/TaeGDYtu_o.png)
-![image showing summary and points generation](https://images2.imgbox.com/9a/a8/0FSk52qH_o.png)
-![image showing smart quiz](https://images2.imgbox.com/16/62/v0kIqDam_o.png)
+[![RewSvS.md.png](https://iili.io/RewSvS.md.png)](https://freeimage.host/i/RewSvS)
+[![Rew8a2.md.png](https://iili.io/Rew8a2.md.png)](https://freeimage.host/i/Rew8a2)
+[![RewUy7.md.png](https://iili.io/RewUy7.md.png)](https://freeimage.host/i/RewUy7)
+[![Rewv3l.md.png](https://iili.io/Rewv3l.md.png)](https://freeimage.host/i/Rewv3l)
+
+
 
 ## How to run it
 - Make sure you have `node` and `npm` installed.
